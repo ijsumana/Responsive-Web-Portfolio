@@ -1,0 +1,175 @@
+/*Setting the original properties of the elements in the HTML*/
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+body {
+	background-color: #eee !important;
+}
+
+img:hover {
+	border: 1px solid #fff;
+}
+
+#logoRowDivId {
+	background-color: #cccccc;
+	margin-bottom: 15px;
+}
+
+.udlogo {
+	margin: 0;
+	padding: 0;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.AuthNameHeaderClass {
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+	float: right;
+}
+
+hr .hrstyle1 { 
+	display: block;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 1px;
+	width: 100%;
+}
+
+#hrRowDivId {
+	margin-bottom: 15px;
+}
+
+.introRowClass {
+	background-color: #ebebe0;
+	margin-bottom: 15px;
+}
+
+#selfImgContainerId {
+	width: 20%;
+}
+
+.introDivClass{
+	padding: 0px;
+	margin-right: 0px;
+	margin-bottom: 15px;
+}
+
+.introParaClass {
+	font-size: 20px;
+	font-family: 'Glegoo', serif;
+}
+
+.featuretworkDivClass {
+	background-color: #484848;
+}
+
+.featuretworkHeaderClass {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+
+.featureWorkDetailDivClass {
+	margin-bottom: 15px;
+	background-color: #e0e0eb;
+	box-sizing: border-box;
+	/*The following section is to create changing color animation around the project display images.*/
+	/* Safari 4.0 - 8.0 */
+	-webkit-animation-name: firstRowProjects;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	/* Standard syntax */
+	animation-name: firstRowProjects;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+/*changing the project background color constantly with following 5 colors on percentage completion of display*/
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes firstRowProjects {
+	0%		{background-color:#ffff99;}
+	25%		{background-color:#ffcc99;}
+	50%		{background-color:#ccffcc;}
+	75%		{background-color:#99ffcc;}
+	100%	{background-color:#ccccff;}
+}
+
+/* Standard syntax */
+@keyframes firstRowProjects {
+	0%		{background-color:#ffff99;}
+	25%		{background-color:#ffcc99;}
+	50%		{background-color:#ccffcc;}
+	75%		{background-color:#99ffcc;}
+	100%	{background-color:#ccccff;}
+}
+/*End of color transition effect*/
+
+.movieTrailerImgDivClass {
+	box-sizing: border-box;
+	overflow: hidden;
+	display: inline-block;
+}
+
+#webBasedTrailerImgId {
+	margin: 10px;
+	box-sizing: border-box;
+	width: 100%%;
+}
+
+.wbMvDisplayHeaderClass {
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.webTailerModalDescClass {
+	padding: 2px;
+	font-family: 'Rochester', cursive;
+	font-size: 2em;
+	text-align: center;
+}
+
+.contactMeDivClass{
+	background-color: #484848;
+	margin-bottom: 15px;
+}
+.contactMeHeaderClass {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+.contactMeDetailsClass {
+	margin-bottom: 40px;
+}
+
+.linkedInLinkClass {
+	width: 2.5em;
+}
+.gmaillogoClass {
+	width: 2.5em;
+}
+.githublogoClass{
+	width: 2.5em;
+}
+.copyrightClass {
+	text-align: center;
+	font-family: 'Rochester', cursive;
+	font-size: 1.5em;
+}

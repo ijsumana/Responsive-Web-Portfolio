@@ -1,0 +1,207 @@
+/*This file contains the html elements' resizing with change in size of viewport which is set using media queries*/
+.udlogo, .AuthNameHeaderClass, .header4, .selfimg, .introParaClass, .movieTrailerImgDivClass, .linkedInLinkClass{
+	order: 10;
+}
+
+@media screen and (min-width: 270px) {
+	.udlogo {
+		width: 75%;
+		margin-right: 0.5em;
+		order: -1;
+	}
+	
+	.AuthNameHeaderClass {
+		font-size: 25px;
+		order:1;
+		font-style: bold;
+	}
+
+	.header4 {
+		font-size: 16px;
+		order: 2;
+	}
+
+	.selfimg {
+		width: 100VW;
+		display: none;
+		order: 3;
+	}
+
+	.introParaClass{
+		font-size: 16px;
+		order: 4;
+	}
+	.featuretworkHeaderClass {
+		font-size: 20px;
+	}
+
+	#webBasedTrailerImgId {
+		width: 100VW;
+	}
+
+	.mask h4 {
+		font-size: 1em;
+		padding: 2px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 5px;
+		margin-right: 20px;
+	}
+
+	.mask .btn {
+		margin-bottom: 3px;
+	}
+
+	.mask p {
+		font-size: 1em;
+		padding: 2px;
+	}
+
+	.contactMeHeaderClass {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 330px) {
+	.mask h4 {
+		font-size: 1em;
+		padding: 5px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		margin-left: 15px;
+		margin-right: 30px;
+	}
+
+	.mask .btn {
+		margin-bottom: 15px;
+	}
+
+	.mask p {
+		font-size: 1em;
+		padding: 2px;
+	}
+}
+
+@media screen and (min-width: 401px) {
+	.udlogo {
+		width: 50%;
+		margin-right: 0.5em;
+		order: -1;
+	}
+	.AuthNameHeaderClass {
+		font-size: 35px;
+		order:0;
+	}
+
+	.header4 {
+		font-size: 20px;
+		order: 2;
+	}
+
+	.selfimg {
+		display: inline-block;
+		position: relative;
+		margin: 5px;
+		width: 100%;
+		order: 3;
+	}
+	.introParaClass{
+		font-size: 18px;
+		order: 4;
+	}
+	.featuretworkHeaderClass {
+		font-size: 22px;
+	}
+	.wbMvDisplayHeaderClass {
+		font-size: 18px;
+	}
+	.mask h4 {
+		font-size: 1.2em;
+		padding: 10px;
+		margin-top: 15px;
+		margin-bottom: 20px;
+		margin-left: 10px;
+		margin-right: 30px;
+	}
+
+	.mask .btn {
+		margin-bottom: 20px;
+	}
+
+	.mask p {
+		font-size: 1em;
+		padding: 5px;
+	}
+
+	.contactMeHeaderClass {
+		font-size: 22px;
+	}
+}
+
+@media screen and (min-width: 550px) {
+	.udlogo {
+		width: 40%;
+		order: -1
+	}
+	.AuthNameHeaderClass {
+		font-size: 40px;
+		order:0;
+	}
+
+	.header4 {
+		font-size: 25px;
+		order: 2;
+	}
+	.selfimg {
+		display: inline-block;
+    	position: absolute;
+		width: 80%;
+		order: 3;
+	}
+	
+	.introParaClass{
+		font-size: 20px;
+		order: 4;
+	}
+	.featuretworkHeaderClass {
+		font-size: 25px;
+	}
+	.mask h4 {
+		font-size: 1.5em;
+		padding: 10px;
+		margin-top: 15px;
+		margin-bottom: 100px;
+		margin-left: 10px;
+		margin-right: 40px;
+	}
+
+	.mask .btn {
+		margin-bottom: 40px;
+	}
+
+	.mask p {
+		font-size: 1em;
+		padding: 10px 20px 10px 20px;
+	}
+
+	.contactMeHeaderClass {
+		font-size: 25px;
+	}
+}
+
+@media screen and (min-width: 1170px) {
+	.container {
+		width: 1170px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.udlogo {
+		width: 20%;
+	}
+	.selfimg {
+		display: inline-block;
+		position: absolute;
+		width: 60%;
+		order: 3;
+	}
+}

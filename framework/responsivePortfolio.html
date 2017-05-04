@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Responsive Portfolio</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/hoverEffect.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+	<script type="text/javascript" src="./bootstrap/js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Glegoo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+</head>
+<body>
+	<!--the main container of all html elements-->
+	<div class="container">
+
+		<!--Topmost part of portfolio containing udacity logo, name and profession-->
+		<div class="row" id="logoRowDivId">
+			<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+				<img class="img-responsive udlogo" src="./images/udacity-logo.png" alt="Udacity logo">
+			</div>
+			<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 text-uppercase text-right">
+				<h1 class="AuthNameHeaderClass">Ishrat Jahan Sumana</h1>
+				<h4 class="header4">Software Engineer</h4>
+			</div>
+		</div>
+
+		<!--This is the dividing horizontal line divider-->
+		<div class="row" id="hrRowDivId">
+				<hr class="hrstyle1" style="height: 2px; border: none; background: #ada95b; width: 100%;">
+		</div>
+
+		<!--This section contains brief self introduction and image-->
+		<div class="row introRowClass">
+			<div class="col-md-3 col-xs-3 col-sm-3 col-lg-3" id="selfImgContainerId">
+				<img src="./images/me.jpg" class="img-responsive img-circle selfimg" alt="Ishrat's profile picture">
+			</div>
+			<div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 introDivClass">
+				<p class="introParaClass">Hello, I am a Software Engineer, skilled in PL/SQL programming, and OOP with professional experience of 3+ years. Currently I am exploring full stack web development since I found it is really interesting and there is no limit of how much creative you can be!</p>
+			</div>
+		</div>
+
+		<!--Featured work heading-->
+		<div class="row featuretworkDivClass">
+			<h2 class="featuretworkHeaderClass">Featured Work</h2>
+		</div>
+
+		<!--Featured work container. It contains images of all the projects and modal display for project details.-->
+		<div class="row featureWorkDetailDivClass">
+			<div class="row movieTrailerRowDivClass">
+				<div class="col-md-6 col-xs-10 col-sm-10 col-lg-6 text-center movieTrailerImgDivClass view-hover">
+					<img class="img-responsive" id="webBasedTrailerImgId" src="./images/mvStoryLine.png" alt="Web based movie trailer display">
+					<div class="text-center mask" id="maskId">
+						<h4 class="text-uppercase wbMvDisplayHeaderClass">Web Based Movie Trailer Display</h4>
+						<input type="button" class="btn btn-basic" value="Details" data-toggle="modal" data-target="#webTrailerModal">
+						<a href="https://github.com/ijsumana/Movie-Trailer-Display" target="_blank"><p>Github Link</p></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<!--contains contact me information-->
+			<div class="row contactMeDivClass">
+				<h3 class="contactMeHeaderClass">Contact Me</h3>
+			</div>
+			<div class="row contactMeDetailsClass">
+				<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
+					<a href="https://www.linkedin.com/in/ijsumana/" target="_blank"><img class="img-responsive linkedInLinkClass" src="./images/linkedin.png" alt="Linked in contact"></a>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
+					<a href="mailto:ijsumana@gmail.com"><img class="img-responsive gmaillogoClass" src="./images/gmail-icon.png" alt="gmail account"></a>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
+					<a href="https://github.com/ijsumana" target="_blank"><img class="img-responsive githublogoClass" src="./images/github-logo.png" alt="Linked in contact"></a>
+				</div>
+			</div>
+			<p class="copyrightClass text-center">Copyright &copy; Ishrat Jahan Sumana.</p>
+		</footer>
+	</div>
+
+	<!--This part is for modal display when the 'details' button is clicked on the project image-->
+	<!-- Modal -->
+	<div class="modal fade" id="webTrailerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">Movie Trailer Display</h4>
+				</div>
+
+				<div class="modal-body row">
+					<div class="row">
+						<div class="col-md-12">
+							<img class="img-responsive" src="./images/mvTrlerShowing.png" id="webTrailerModalImId" alt="movie tralier image on modal-body">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<p class="webTailerModalDescClass">A Python class has been created to instantiate my favorite movies with their title, story line, trailer youtube url and poster image. The list of these movies are then sent to a web application which displays all these movies in tile display. Clicking on the movie poster starts movie trailer display pop up from youtube. When a movie trailer is displayed the poster image background is colored yellow to keep track of the watched trailers. Mouse pointer over the movie poster displays the story line of the movie as tooltip.</p>
+						</div>
+					</div>
+				</div>
+			
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--End of modal display-->
+</body>
+</html>
