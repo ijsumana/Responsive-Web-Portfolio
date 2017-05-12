@@ -1,5 +1,6 @@
 /*Setting the original properties of the elements in the HTML*/
-body, html {
+body, 
+html {
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -16,7 +17,7 @@ img:hover {
 	border: 1px solid #fff;
 }
 
-#logoRowDivId {
+#logo-row-id {
 	background-color: #cccccc;
 	margin-bottom: 15px;
 }
@@ -28,60 +29,57 @@ img:hover {
 	box-sizing: border-box;
 }
 
-.AuthNameHeaderClass {
+.auth-name-header-class {
 	font-family: 'Raleway', sans-serif;
 	font-size: 40px;
 	float: right;
 }
 
-hr .hrstyle1 { 
-	display: block;
-	margin-bottom: 15px;
-	margin-left: auto;
-	margin-right: auto;
-	border-style: inset;
-	border-width: 1px;
+.hrstyle1{ 
+	color: #ada95b;
+	background-color: #ada95b;
 	width: 100%;
+	height: 1px;
+	margin: 10px 0px 15px 0px;
 }
 
-#hrRowDivId {
+hr {
+	display: none;
+}
+
+#hr-row-div-id {
 	margin-bottom: 15px;
 }
 
-.introRowClass {
+.intro-row-class {
 	background-color: #ebebe0;
 	margin-bottom: 15px;
 }
 
-#selfImgContainerId {
+#self-img-container-id {
 	width: 20%;
 }
 
-.introDivClass{
+.intro-div-class{
 	padding: 0px;
-	margin-right: 0px;
-	margin-bottom: 15px;
 }
 
-.introParaClass {
+.intro-para-class {
 	font-size: 20px;
 	font-family: 'Glegoo', serif;
+	margin: 5px 0px 5px 0px;
 }
 
-.featuretworkDivClass {
+.feature-work-div-class {
 	background-color: #484848;
 }
 
-.featuretworkHeaderClass {
+.feature-work-header-class {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	margin-left: 15px;
 }
 
-.featureWorkDetailDivClass {
-	margin-bottom: 15px;
+.feature-work-detail-div-class {
 	background-color: #e0e0eb;
 	box-sizing: border-box;
 	/*The following section is to create changing color animation around the project display images.*/
@@ -120,56 +118,211 @@ hr .hrstyle1 {
 }
 /*End of color transition effect*/
 
-.movieTrailerImgDivClass {
+.movie-trailer-img-div-class {
 	box-sizing: border-box;
 	overflow: hidden;
 	display: inline-block;
+	margin: 0px;
 }
 
-#webBasedTrailerImgId {
-	margin: 10px;
+
+.web-based-trailer-img-class {
 	box-sizing: border-box;
-	width: 100%%;
+	margin: 10px 0px 10px 0px;
 }
 
-.wbMvDisplayHeaderClass {
-	margin-top: 15px;
-	margin-bottom: 10px;
+.wb-mv-display-header-class {
+	margin-right: 5px;
 }
 
-.webTailerModalDescClass {
+.modal-desc-class {
 	padding: 2px;
 	font-family: 'Rochester', cursive;
 	font-size: 2em;
 	text-align: center;
 }
 
-.contactMeDivClass{
-	background-color: #484848;
+.lastRow {
 	margin-bottom: 15px;
 }
-.contactMeHeaderClass {
-	color: #fff;
-	font-family: 'Open Sans', sans-serif;
-	margin-top: 15px;
+
+.contact-me-div-class{
 	margin-bottom: 15px;
-	margin-left: 15px;
 }
-.contactMeDetailsClass {
+
+.contact-me-details-class {
 	margin-bottom: 40px;
 }
 
-.linkedInLinkClass {
+.linkedin-link-class {
 	width: 2.5em;
 }
-.gmaillogoClass {
+
+.gmail-logo-class {
 	width: 2.5em;
 }
-.githublogoClass{
+
+.github-logo-class{
 	width: 2.5em;
 }
-.copyrightClass {
+
+.copyright-class {
 	text-align: center;
 	font-family: 'Rochester', cursive;
 	font-size: 1.5em;
 }
+
+/*This section contains the CSS hover effect when mouse pointer is over the project image.
+Mask decoration and positioning for hover effect*/
+.mask {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	margin: 10px;
+}
+
+.mask h4 {
+	text-transform: uppercase;
+	box-sizing: border-box;
+	color: #000;
+	text-align: center;
+	position: relative;
+	font-size: 1.5em;
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.8);
+	margin: 20px 40px 20px 40px;
+}
+
+.mask .btn {
+	margin-bottom: 30px;
+}
+
+.mask p {
+	font-family: Georgia, serif;
+	font-style: italic;
+	font-size: 1em;
+	position: relative;
+	color: #000;
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+}
+/*end mask property*/
+
+/*hover effects. "view-hover" class is created to generate all hover effects*/
+/*image is set to scale 1*/
+.view-hover img {
+	-webkit-transform: scaleY(1);
+	-moz-transform: scaleY(1);
+	-o-transform: scaleY(1);
+	-ms-transform: scaleY(1);
+	transform: scaleY(1);
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+	-ms-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out;
+}
+
+/*mask is made hidden*/
+.view-hover .mask {
+	background-color: #daffb3;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+/*the header4 is made hidden*/
+.view-hover h4 {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	background-color: #000;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	color: #fff;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+/*setting up the hidden button on hover*/
+.view-hover .btn {
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+
+/*the github link is made hidden here*/
+.view-hover p {
+	color: #222;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+
+/*project image is scaled out first*/
+.view-hover:hover img {
+	-webkit-transform: scale(5);
+	-moz-transform: scale(5);
+	-o-transform: scale(5);
+	-ms-transform: scale(5);
+	transform: scale(5);
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+/*the mask is set visible now*/
+.view-hover:hover .mask {
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+/*the elements of the mask are made visible*/
+.view-hover:hover h4,.view-hover:hover p, .view-hover .btn{
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+/*end of hover effects*/
